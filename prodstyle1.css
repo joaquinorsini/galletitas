@@ -1,0 +1,238 @@
+body{
+    margin: 0;
+}
+
+.img-container{
+    display: inline-block;
+}
+
+
+
+ul{
+    margin: 0;
+    list-style: none;
+    width: 40%;
+    margin-left: 80px;
+    
+
+}
+
+li{
+    display: inline;
+    margin-right: 24px;
+    color: black;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+
+header{
+    display: flex;
+    height: 80px;
+    align-items: center;
+    z-index: 100;
+    background-color: #F4F4F4;
+}
+
+.search-container{
+    display: flex;
+    height: 100px;
+    width: 100%;
+    justify-content: end;
+    align-items: center;
+}
+
+#ic_buscar{
+    height: 25px;
+    width: 25px;
+    margin-left: 16px;
+}
+
+.searcher{
+    display: flex;
+    align-items: center;
+    margin-right: 40px;
+    padding: 16px;
+    background-color: #E6E6E6;
+    border-radius: 16px;
+}
+
+#ic_carro{
+    height: 35px;
+    width: 35px;
+}
+
+.btn-cart{
+    
+    display: inline-block;
+    padding: 12px;
+    margin-right: 32px;
+    border-radius: 16px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.s2{
+    height: 500px;
+}
+
+.s2-title{
+    display: flex;
+    justify-content: center;
+    font-size: 38px;
+}
+
+.s2-container{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+}
+
+.s2-prod-1{
+    border: burlywood solid 2px;
+    border-radius: 16px;
+    margin-left: 48px;
+    margin-right: 48px;
+    padding: 16px;
+}
+
+.s2-img{
+    width: 140px;
+    height: 140px;
+}    
+
+.s2-cookie{
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 16px;
+}
+
+.s2-price{
+    text-align: center;
+    font-style: italic;
+    size: 14px;
+    margin: 0;
+}
+
+.btn-añadir{
+    text-align: center;
+    padding: 1px;
+    margin-top: 8px;
+    background-color: green;
+    border-radius: 16px;
+}
+
+.s2-prod-2{
+    border: burlywood solid 2px;
+    border-radius: 16px;
+    margin-left: 48px;
+    margin-right: 48px;
+    padding: 16px;
+}
+
+.s2-prod-3{
+    border: burlywood solid 2px;
+    border-radius: 16px;
+    margin-left: 48px;
+    margin-right: 48px;
+    padding: 16px;
+}
+
+.s2-btn-añadir-p{
+    color: whitesmoke;
+    font-weight: bold;
+
+}
+
+.s2-prod-4{
+    border: burlywood solid 2px;
+    border-radius: 16px;
+    margin-left: 48px;
+    margin-right: 48px;
+    padding: 16px;
+}
+
+.s2-prod-5{
+    border: burlywood solid 2px;
+    border-radius: 16px;
+    margin-left: 48px;
+    margin-right: 48px;
+    padding: 16px;
+}
+
+.s2-prod-6{
+    border: burlywood solid 2px;
+    border-radius: 16px;
+    margin-left: 48px;
+    margin-right: 48px;
+    padding: 16px;
+}
+
+.s4{
+    height: 400px;
+}
+
+.s4-title{
+    display: flex;
+    font-size: 48px;
+    width: 100%;
+    justify-content: center;
+}
+
+.s4-form{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.s4-form-name{
+    margin: 16px;
+}
+
+.s4-form-email{
+    margin: 16px;
+}
+
+.s4-form-ta{
+    margin: 16px;
+}
+
+.s4-form-submit{
+    margin: 16px;
+}
+
+.form-container{
+    background-color: #E6E6E6;
+    padding: 96px;
+    border-radius: 16px;
+}
+
+.cart-dropdown button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.buy-button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    margin: 10px auto;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 90%;
+}
