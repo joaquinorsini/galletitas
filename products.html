@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="prodstyle.css">
+    <title>Productos</title>
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("Vladimir"); 
+        })();
+    </script>
+</head>
+<body>
+    <header>
+        <ul class="menu">
+            <li class="menu_home"><a href="index.html">Home</a></li>
+            <li class="menu_prod"><a href="productos.html">Productos</a></li>
+            <li class="menu_cont"><a href="#contacto">Contacto</a></li>
+        </ul>
+        <div class="search-container">
+            <div class="searcher">
+                <input type="text" name="search" id="searcher_input" placeholder="Buscar...">
+                <img src="imgs/buscar.png" alt="icono_buscar" id="ic_buscar">
+            </div>
+        </div>
+        <div class="btn-cart">
+            <img src="imgs/carrito-de-compras.png" alt="icono_carrito" id="ic_carro">
+        </div>
+    </header>
+
+    <div id="cart-dropdown" class="cart-dropdown">
+        <h4>carrito anashe</h4>
+        <ul id="cart-items">
+           
+        </ul>
+    </div>
+
+    <section class="s2">   
+        <h4 class="s2-title">Dulces</h4>
+        <div class="s2-container">
+            <div class="s2-prod-1">
+                <img src="imgs/oreo.jpg" alt="oreo" class="s2-img">
+                <h5 class="s2-cookie">Oreo</h5>
+                <p class="s2-price">$1.050</p>
+                <div class="btn-añadir" onclick="addToCart('Oreo', 1050)">
+                    <p class="s2-btn-añadir-p">Añadir al Carrito</p>
+                </div>
+            </div>
+            <div class="s2-prod-2">
+                <img src="imgs/toddy.jpg" alt="toddy" class="s2-img">
+                <h5 class="s2-cookie">Toddy</h5>
+                <p class="s2-price">$1.400</p>
+                <div class="btn-añadir" onclick="addToCart('Toddy', 1400)">
+                    <p class="s2-btn-añadir-p">Añadir al Carrito</p>
+                </div>
+            </div>
+            <div class="s2-prod-3">
+                <img src="imgs/chocolinas.jpg" alt="chocolinas" class="s2-img">
+                <h5 class="s2-cookie">Chocolinas</h5>
+                <p class="s2-price">$900</p>
+                <div class="btn-añadir" onclick="addToCart('Chocolinas', 900)">
+                    <p class="s2-btn-añadir-p">Añadir al Carrito</p>
+                </div>
+            </div>
+            <div class="s2-prod-4">
+                <img src="imgs/rumba.jpg" alt="rumba" class="s2-img">
+                <h5 class="s2-cookie">Rumba</h5>
+                <p class="s2-price">$840</p>
+                <div class="btn-añadir" onclick="addToCart('Rumba', 840)">
+                    <p class="s2-btn-añadir-p">Añadir al Carrito</p>
+                </div>
+            </div>
+            <div class="s2-prod-5">
+                <img src="imgs/pepitos.jpg" alt="pepitos" class="s2-img">
+                <h5 class="s2-cookie">Pepitos</h5>
+                <p class="s2-price">$1.100</p>
+                <div class="btn-añadir" onclick="addToCart('Pepitos', 1100)">
+                    <p class="s2-btn-añadir-p">Añadir al Carrito</p>
+                </div>
+            </div>
+            <div class="s2-prod-6">
+                <img src="imgs/opera.jpg" alt="opera" class="s2-img">
+                <h5 class="s2-cookie">Opera</h5>
+                <p class="s2-price">$520</p>
+                <div class="btn-añadir" onclick="addToCart('Opera', 520)">
+                    <p class="s2-btn-añadir-p">Añadir al Carrito</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="s2">   
+        <h4 class="s2-title">Saladas</h4>
+        <div class="s2-container">
+            <div class="s2-prod-1">
+                <img src="imgs/criollitas.jpg" alt="criollitas" class="s2-img">
+                <h5 class="s2-cookie">criollitas</h5>
+                <p class="s2-price">$320</p>
+                <div class="btn-añadir" onclick="addToCart('Criollitas', 320)">
+                    <p class="s2-btn-añadir-p">Añadir al Carrito</p>
+                </div>
+            </div>
+            <div class="s2-prod-2">
+                <img src="imgs/granix.webp" alt="granix" class="s2-img">
+                <h5 class="s2-cookie">Granix</h5>
+                <p class="s2-price">$840</p>
+                <div class="btn-añadir" onclick="addToCart('Granix', 840)">
+                    <p class="s2-btn-añadir-p">Añadir al Carrito</p>
+                </div>
+            </div>
+            <div class="s2-prod-3">
+                <img src="imgs/traviata.webp" alt="traviata" class="s2-img">
+                <h5 class="s2-cookie">Traviata</h5>
+                <p class="s2-price">$1.600</p>
+                <div class="btn-añadir" onclick="addToCart('Traviata', 1600)">
+                    <p class="s2-btn-añadir-p">Añadir al Carrito</p>
+                </div>
+            </div>
+            <div class="s2-prod-4">
+                <img src="imgs/don satur.webp" alt="don satur" class="s2-img">
+                <h5 class="s2-cookie">Bizcochos Don Satur</h5>
+                <p class="s2-price">$880</p>
+                <div class="btn-añadir" onclick="addToCart('Bizcochos Don Satur', 880)">
+                    <p class="s2-btn-añadir-p">Añadir al Carrito</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="s2">   
+        <h4 class="s2-title">Surtidos</h4>
+        <div class="s2-container">
+            <div class="s2-prod-1">
+                <img src="imgs/diversion.jpg" alt="diversion" class="s2-img">
+                <h5 class="s2-cookie">Surtido Diversión</h5>
+                <p class="s2-price">$1.500</p>
+                <div class="btn-añadir" onclick="addToCart('Surtido Diversión', 1500)">
+                    <p class="s2-btn-añadir-p">Añadir al Carrito</p>
+                </div>
+            </div>
+            <div class="s2-prod-2">
+                <img src="imgs/terrabusi.jpg" alt="terrabusi" class="s2-img">
+                <h5 class="s2-cookie">Surtido Terrabusi</h5>
+                <p class="s2-price">$2.700</p>
+                <div class="btn-añadir" onclick="addToCart('Surtido Terrabusi', 2700)">
+                    <p class="s2-btn-añadir-p">Añadir al Carrito</p>
+                </div>
+            </div>
+            <div class="s2-prod-3">
+                <img src="imgs/bagley.jpg" alt="bagley" class="s2-img">
+                <h5 class="s2-cookie">Surtido Bagley</h5>
+                <p class="s2-price">$1.600</p>
+                <div class="btn-añadir" onclick="addToCart('Surtido Bagley', 1600)">
+                    <p class="s2-btn-añadir-p">Añadir al Carrito</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="s4" id="contacto">
+        <h5 class="s4-title">Contacto</h5>
+        <form class="s4-form" id="contact-form">
+            <div class="form-container">
+                <input class="s4-form-name" type="text" id="contact-name" placeholder="Nombre Completo" required>
+                <input class="s4-form-email" type="email" id="contact-email" placeholder="Email" required>
+                <input class="s4-form-text" type="text" id="contact-message" placeholder="Cuentenos su Problema" required>
+                <input type="submit" class="s4-form-submit" value="Submit">
+            </div>
+        </form>
+    </section>
+    <script>
+        document.getElementById('ic_carro').addEventListener('click', function(event) {
+            event.preventDefault();
+            toggleCartDropdown();
+        });
+
+        document.getElementById('ic_buscar').addEventListener('click', function(event) {
+            event.preventDefault();
+            searchProducts();
+        });
+
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            var templateParams = {
+                name: document.getElementById('contact-name').value,
+                email: document.getElementById('contact-email').value,
+                message: document.getElementById('contact-message').value
+            };
+
+            emailjs.send('ServicioTecnicoWalo', 'ProblemitasDeDown', templateParams)
+                .then(function(response) {
+                   console.log('SUCCESS!', response.status, response.text);
+                   alert('Message sent successfully!');
+                }, function(error) {
+                   console.log('FAILED...', error);
+                   alert('Failed to send the message. Please try again.');
+                });
+        });
+
+        function toggleCartDropdown() {
+            var cartDropdown = document.getElementById('cart-dropdown');
+            if (cartDropdown.style.display === 'none' || cartDropdown.style.display === '') {
+                cartDropdown.style.display = 'block';
+            } else {
+                cartDropdown.style.display = 'none';
+            }
+        }
+
+        function addToCart(productName, productPrice) {
+            var cartItems = document.getElementById('cart-items');
+            var newItem = document.createElement('li');
+            newItem.textContent = productName + ' - $' + productPrice;
+
+            var deleteButton = document.createElement('button');
+            deleteButton.textContent = 'Remover';
+            deleteButton.style.marginLeft = '10px';
+            deleteButton.addEventListener('click', function() {
+                removeFromCart(newItem);
+            });
+
+            newItem.appendChild(deleteButton);
+            cartItems.appendChild(newItem);
+        }
+
+        function removeFromCart(cartItem) {
+            var cartItems = document.getElementById('cart-items');
+            cartItems.removeChild(cartItem);
+        }
+
+        function searchProducts() {
+            var input = document.getElementById('searcher_input').value.toLowerCase();
+            var productNames = document.querySelectorAll('.s2-cookie');
+
+            productNames.forEach(function(product) {
+                var productName = product.textContent.toLowerCase();
+                var productContainer = product.parentElement;
+
+                if (productName.includes(input)) {
+                    productContainer.style.display = 'block';
+                } else {
+                    productContainer.style.display = 'none';
+                }
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('cart-dropdown').style.display = 'none';
+        });
+    </script>
+</body>
+</html>
